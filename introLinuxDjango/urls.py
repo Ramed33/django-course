@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from introLinuxDjango.views import item
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('cart/', item, name='cart')
 ]
